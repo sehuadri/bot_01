@@ -23,7 +23,7 @@ async def lock_ssh(event):
 	if a == "true":
 		await lock_ssh_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 #UNLOCK ssh
 @bot.on(events.CallbackQuery(data=b'unlock-ssh'))
 async def unlock_ssh(event):
@@ -47,7 +47,7 @@ async def unlock_ssh(event):
 	if a == "true":
 		await unlock_ssh_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 #DELETESSH
 @bot.on(events.CallbackQuery(data=b'delete-ssh'))
 async def delete_ssh(event):
@@ -69,7 +69,7 @@ async def delete_ssh(event):
 	if a == "true":
 		await delete_ssh_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 #RENEWSSH
 @bot.on(events.CallbackQuery(data=b'recov-ssh'))
 async def recov_ssh(event):
@@ -101,7 +101,7 @@ async def recov_ssh(event):
 {a}
 ```
 **RENEW SSH**
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	chat = event.chat_id
 	sender = await event.get_sender()
@@ -109,7 +109,7 @@ async def recov_ssh(event):
 	if a == "true":
 		await recov_ssh_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
         
 #LIMITSSH
 @bot.on(events.CallbackQuery(data=b'limit-ssh'))
@@ -134,7 +134,7 @@ async def limit_ssh(event):
 {a}
 ```
 **CHANGE IP SSH**
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	chat = event.chat_id
 	sender = await event.get_sender()
@@ -142,7 +142,7 @@ async def limit_ssh(event):
 	if a == "true":
 		await limit_ssh_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 @bot.on(events.CallbackQuery(data=b'quota-ssh'))
 async def quota_ssh(event):
@@ -166,7 +166,7 @@ async def quota_ssh(event):
 {a}
 ```
 **CHANGE QUOTA SSH**
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	chat = event.chat_id
 	sender = await event.get_sender()
@@ -174,7 +174,7 @@ async def quota_ssh(event):
 	if a == "true":
 		await quota_ssh_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 
 @bot.on(events.CallbackQuery(data=b'show-ssh'))
@@ -211,7 +211,7 @@ async def show_ssh(event):
     if a == "true":
         await show_ssh_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 		
 @bot.on(events.CallbackQuery(data=b'login-ssh'))
@@ -226,14 +226,14 @@ async def login_ssh(event):
 {z}
 
 **shows logged in users SSH Ovpn**
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
 	if a == "true":
 		await login_ssh_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 
 @bot.on(events.CallbackQuery(data=b'ssh'))
@@ -260,7 +260,7 @@ Button.inline("𝗨𝗻𝗹𝗼𝗰𝗸","unlock-ssh")],
 **» Hostname/IP:** `{DOMAIN}`
 **» ISP:** `{z["isp"]}`
 **» Country:** `{z["country"]}`
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 **◇━━━━━━━━━━━━━━━━━◇**
 """
 		await event.edit(msg,buttons=inline)
@@ -269,4 +269,4 @@ Button.inline("𝗨𝗻𝗹𝗼𝗰𝗸","unlock-ssh")],
 	if a == "true":
 		await ssh_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
