@@ -72,7 +72,7 @@ https://{DOMAIN}:81/trojan-{user}.txt
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** `{later}`
 **◇━━━━━━━━━━━━━━━━━◇**
-**» ** 🤖@amqyu
+**» ** 🤖@Amiqyu
 """
         await event.respond(msg)
 
@@ -83,7 +83,7 @@ https://{DOMAIN}:81/trojan-{user}.txt
     if a == "true":
         await create_trojan_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 @bot.on(events.CallbackQuery(data=b'cek-tr'))
 async def cek_trojan(event):
@@ -112,7 +112,7 @@ async def cek_trojan(event):
     if a == "true":
         await cek_trojan_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 @bot.on(events.CallbackQuery(data=b'trial-trojan'))
@@ -158,7 +158,7 @@ https://{DOMAIN}:81/trojan-{remarks}.txt
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** 30 Minutes
 **◇━━━━━━━━━━━━━━━━━◇**
-**» ** 🤖@amqyu
+**» ** 🤖@Amiqyu
 """
             await event.respond(msg)
 
@@ -169,7 +169,7 @@ https://{DOMAIN}:81/trojan-{remarks}.txt
     if a == "true":
         await trial_trojan_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 @bot.on(events.CallbackQuery(data=b'renew-trojan'))
 async def ren_trojan(event):
@@ -214,7 +214,7 @@ async def ren_trojan(event):
     if a == "true":
         await ren_trojan_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -244,7 +244,7 @@ async def cek_tr(event):
     if a == "true":
         await cek_tr_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 		
@@ -272,7 +272,7 @@ async def delete_trojan(event):
     if a == "true":
         await delete_trojan_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 @bot.on(events.CallbackQuery(data=b'limit-trojan'))
 async def limit_trojan(event):
@@ -297,7 +297,7 @@ async def limit_trojan(event):
 {a}
 ```
 **GANTI IP trojan**
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	chat = event.chat_id
 	sender = await event.get_sender()
@@ -305,7 +305,7 @@ async def limit_trojan(event):
 	if a == "true":
 		await limit_trojan_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 @bot.on(events.CallbackQuery(data=b'quota-trojan'))
 async def quota_trojan(event):
@@ -330,7 +330,7 @@ async def quota_trojan(event):
 {a}
 ```
 **GANTI QUOTA trojan**
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	chat = event.chat_id
 	sender = await event.get_sender()
@@ -338,7 +338,7 @@ async def quota_trojan(event):
 	if a == "true":
 		await quota_trojan_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 @bot.on(events.CallbackQuery(data=b'lock-trojan'))
 async def lock_trojan(event):
@@ -362,7 +362,7 @@ async def lock_trojan(event):
 	if a == "true":
 		await lock_trojan_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 #UNLOCK ssh
 @bot.on(events.CallbackQuery(data=b'unlock-trojan'))
 async def unlock_trojan(event):
@@ -386,7 +386,7 @@ async def unlock_trojan(event):
 	if a == "true":
 		await unlock_trojan_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 @bot.on(events.CallbackQuery(data=b'trojan'))
 async def trojan(event):
@@ -413,7 +413,7 @@ async def trojan(event):
 **» Hostname/IP:** `{DOMAIN}`
 **» ISP:** `{z["isp"]}`
 **» Country:** `{z["country"]}`
-**» ** 🤖@amqyu
+**» ** 🤖@Amiqyu
 **◇━━━━━━━━━━━━━━━━━◇**
         """
         await event.edit(msg, buttons=inline)
@@ -425,4 +425,4 @@ async def trojan(event):
     if a == "true":
         await trojan_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
