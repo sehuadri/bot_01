@@ -85,7 +85,7 @@ https://{DOMAIN}:81/ss-{user}.txt
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** `{later}`
 **◇━━━━━━━━━━━━━━━━━◇**
-»  🤖@amqyu
+»  🤖@Amiqyu
 
         """
 
@@ -98,7 +98,7 @@ https://{DOMAIN}:81/ss-{user}.txt
     if a == "true":
         await create_shadowsocks_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -126,7 +126,7 @@ async def cek_shadowsocks(event):
     if a == "true":
         await cek_shadowsocks_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -158,7 +158,7 @@ async def cek_shadowsocks(event):
     if a == "true":
         await cek_shadowsocks_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -186,7 +186,7 @@ async def delete_shadowsocks(event):
     if a == "true":
         await delete_shadowsocks_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -251,7 +251,7 @@ https://{DOMAIN}:81/ss-{remarks}.txt
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** 30 Minutes
 **◇━━━━━━━━━━━━━━━━━◇**
-**» ** 🤖@amqyu
+**» ** 🤖@Amiqyu
 
         """
 
@@ -264,7 +264,7 @@ https://{DOMAIN}:81/ss-{remarks}.txt
     if a == "true":
         await trial_shadowsocks_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 @bot.on(events.CallbackQuery(data=b'renew-ss-ws'))
 async def ren_ss(event):
@@ -275,7 +275,7 @@ async def ren_ss(event):
         # Check if the user is valid before continuing
         a = valid(str(sender.id))
         if a != "true":
-            await event.answer("Buy Premium Chat: @amqyu", alert=True)
+            await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
             return
 
         # Get user input for Username, Expiry, IP limit, and Quota
@@ -334,7 +334,7 @@ async def limit_shadowsocks(event):
 {a}
 ```
 **GANTI IP shadowsocks**
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	chat = event.chat_id
 	sender = await event.get_sender()
@@ -342,7 +342,7 @@ async def limit_shadowsocks(event):
 	if a == "true":
 		await limit_shadowsocks_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 @bot.on(events.CallbackQuery(data=b'quota-shadowsocks'))
 async def quota_shadowsocks(event):
@@ -367,7 +367,7 @@ async def quota_shadowsocks(event):
 {a}
 ```
 **GANTI QUOTA shadowsocks**
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	chat = event.chat_id
 	sender = await event.get_sender()
@@ -375,7 +375,7 @@ async def quota_shadowsocks(event):
 	if a == "true":
 		await quota_shadowsocks_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 @bot.on(events.CallbackQuery(data=b'lock-shadowsocks'))
 async def lock_shadowsocks(event):
@@ -399,7 +399,7 @@ async def lock_shadowsocks(event):
 	if a == "true":
 		await lock_shadowsocks_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 #UNLOCK ssh
 @bot.on(events.CallbackQuery(data=b'unlock-shadowsocks'))
 async def unlock_shadowsocks(event):
@@ -423,7 +423,7 @@ async def unlock_shadowsocks(event):
 	if a == "true":
 		await unlock_shadowsocks_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 
 
@@ -455,7 +455,7 @@ async def shadowsocks(event):
 » Hostname/IP: `{DOMAIN}`
 » ISP: `{z["isp"]}`
 » Country: `{z["country"]}`
-**» ** 🤖@amqyu
+**» ** 🤖@Amiqyu
 **◇━━━━━━━━━━━━━━━━━◇**
 """
 
@@ -468,6 +468,6 @@ async def shadowsocks(event):
     if a == "true":
         await shadowsocks_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
