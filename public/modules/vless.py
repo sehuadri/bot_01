@@ -73,7 +73,7 @@ https://{DOMAIN}:81/vless-{user}.txt
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** `{later}`
 **◇━━━━━━━━━━━━━━━━━◇**
-**» ** 🤖@amqyu
+**» ** 🤖@Amiqyu
 """
         await event.respond(msg)
 
@@ -84,7 +84,7 @@ https://{DOMAIN}:81/vless-{user}.txt
     if a == "true":
         await create_vless_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 @bot.on(events.CallbackQuery(data=b'cek-vless'))
 async def cek_vless(event):
@@ -113,7 +113,7 @@ async def cek_vless(event):
     if a == "true":
         await cek_vless_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 		
 @bot.on(events.CallbackQuery(data=b'renew-vless'))
 async def ren_vless(event):
@@ -159,7 +159,7 @@ async def ren_vless(event):
     if a == "true":
         await ren_vless_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 # CEK member VLESS
@@ -184,7 +184,7 @@ async def cek_vless(event):
     if a == "true":
         await cek_vless_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -213,7 +213,7 @@ async def delete_vless(event):
     if a == "true":
         await delete_vless_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -261,7 +261,7 @@ https://{DOMAIN}:81/vless-{remarks}.txt
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** 30 Minutes
 **◇━━━━━━━━━━━━━━━━━◇**
-**» ** 🤖@amqyu
+**» ** 🤖@Amiqyu
 """
             await event.respond(msg)
 
@@ -272,7 +272,7 @@ https://{DOMAIN}:81/vless-{remarks}.txt
     if a == "true":
         await trial_vless_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 @bot.on(events.CallbackQuery(data=b'limit-vless'))
 async def limit_vless(event):
@@ -297,7 +297,7 @@ async def limit_vless(event):
 {a}
 ```
 **GANTI IP vless**
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	chat = event.chat_id
 	sender = await event.get_sender()
@@ -305,7 +305,7 @@ async def limit_vless(event):
 	if a == "true":
 		await limit_vless_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 @bot.on(events.CallbackQuery(data=b'quota-vless'))
 async def quota_vless(event):
@@ -330,7 +330,7 @@ async def quota_vless(event):
 {a}
 ```
 **GANTI QUOTA vless**
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	chat = event.chat_id
 	sender = await event.get_sender()
@@ -338,7 +338,7 @@ async def quota_vless(event):
 	if a == "true":
 		await quota_vless_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 @bot.on(events.CallbackQuery(data=b'lock-vless'))
 async def lock_vless(event):
@@ -362,7 +362,7 @@ async def lock_vless(event):
 	if a == "true":
 		await lock_vless_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 #UNLOCK ssh
 @bot.on(events.CallbackQuery(data=b'unlock-vless'))
 async def unlock_vless(event):
@@ -386,7 +386,7 @@ async def unlock_vless(event):
 	if a == "true":
 		await unlock_vless_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 		
 
 @bot.on(events.CallbackQuery(data=b'vless'))
@@ -414,7 +414,7 @@ async def vless(event):
 **  Hostname/IP:** `{DOMAIN}`
 **  ISP:** `{z["isp"]}`
 **  Country:** `{z["country"]}`
-**» ** 🤖@amqyu
+**» ** 🤖@Amiqyu
 **◇━━━━━━━━━━━━━━━━━◇**
 """
         await event.edit(msg, buttons=inline)
@@ -426,5 +426,5 @@ async def vless(event):
     if a == "true":
         await vless_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
