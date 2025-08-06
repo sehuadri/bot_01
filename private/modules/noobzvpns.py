@@ -86,7 +86,7 @@ async def create_noobz(event):
     if a == "true":
         await create_noobz_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 @bot.on(events.CallbackQuery(data=b'trial-noobz'))
@@ -143,7 +143,7 @@ async def create_noobz(event):
     if a == "true":
         await create_noobz_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 @bot.on(events.CallbackQuery(data=b'cek-noobz'))
@@ -169,7 +169,7 @@ async def cek_vmess(event):
     if a == "true":
         await cek_noobz_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -201,7 +201,7 @@ async def delete_noobz(event):
     if a == "true":
         await delete_noobz_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
         
 
 ###################
@@ -231,7 +231,7 @@ async def block_noobz(event):
     if a == "true":
         await block_noobz_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -264,7 +264,7 @@ async def unblock_noobz(event):
     if a == "true":
         await unblock_noobz_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -304,7 +304,7 @@ async def ren_vmess(event):
     if a == "true":
         await ren_noobz_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -327,7 +327,7 @@ async def vmess(event):
 **» Hostname/IP:** `{DOMAIN}`
 **» ISP:** `{z["isp"]}`
 **» Country:** `{z["country"]}`
-**» **🤖@amqyu
+**» **🤖@Amiqyu
 **◇━━━━━━━━━━━━━━━━━◇**
 """
         await event.edit(msg, buttons=inline)
@@ -339,6 +339,6 @@ async def vmess(event):
     if a == "true":
         await vmess_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
