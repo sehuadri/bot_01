@@ -10,7 +10,7 @@ async def cancel_command(event):
     user_id = str(sender.id)
 
     if valid(user_id) != "true":
-        await event.reply("Buy Premium Chat: @amqyu")
+        await event.reply("Buy Premium Chat: @Amiqyu")
         return
 
     await event.reply(
@@ -28,14 +28,14 @@ async def rebooot(event):
 		subprocess.check_output(cmd, shell=True)
 		await event.edit(f"""
 **» REBOOT SERVER**
-**» 🤖@amqyu**"""
+**» 🤖@Amiqyu**"""
     ,buttons=[[Button.inline("‹ 𝗠𝗮𝗶𝗻 𝗠𝗲𝗻𝘂 ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
 	if a == "true":
 		await rebooot_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 
 @bot.on(events.CallbackQuery(data=b'resx'))
@@ -48,14 +48,14 @@ async def rebooot(event):
 		z = subprocess.check_output(cmd, shell=True).decode("utf-8")
 		await event.edit(f"""
 **{z}**
-**» 🤖@amqyu**"""
+**» 🤖@Amiqyu**"""
     ,buttons=[[Button.inline("‹ 𝗠𝗮𝗶𝗻 𝗠𝗲𝗻𝘂 ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
 	if a == "true":
 		await rebooot_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
         
 
 @bot.on(events.CallbackQuery(data=b'speedtest'))
@@ -71,14 +71,14 @@ async def speedtest(event):
 **
 {z}
 **
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ 𝗠𝗮𝗶𝗻 𝗠𝗲𝗻𝘂 ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
 	if a == "true":
 		await speedtest_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 @bot.on(events.CallbackQuery(data=b'setup_backup'))
 async def set_backupbot(event):
@@ -87,7 +87,7 @@ async def set_backupbot(event):
 
     # Validasi user yang boleh set token & id (hanya admin)
     if valid(user_id) != "true":
-        await event.answer("❌ Akses ditolak. Hubungi admin: @amqyu", alert=True)
+        await event.answer("❌ Akses ditolak. Hubungi admin: @Amiqyu", alert=True)
         return
 
     async with bot.conversation(event.chat_id) as user:
@@ -117,7 +117,7 @@ async def run_backupku(event):
     user_id = str(sender.id)
 
     if valid(user_id) != "true":
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
         return
 
     if not os.path.exists("/root/.bckupbot"):
@@ -170,7 +170,7 @@ async def restore(event):
             await event.respond("**Link Not Exist**")
         else:
             msg = f"""```{restore_output}```
-**🤖@amqyu**"""
+**🤖@Amiqyu**"""
             await event.respond(msg)
 
     chat = event.chat_id
@@ -181,7 +181,7 @@ async def restore(event):
     if a == "true":
         await restore_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
         
 		
 @bot.on(events.CallbackQuery(data=b'backer'))
@@ -200,7 +200,7 @@ Button.inline("𝗕𝗮𝗰𝗸𝘂𝗽","backup")],
 ** » Domain:** `{DOMAIN}`
 ** » ISP:** `{z["isp"]}`
 ** » Region:** `{z["country"]}`
-**🤖 »**@amqyu
+**🤖 »**@Amiqyu
 **◇━━━━━━━━━━━━━━━━━◇**
 """
 		await event.edit(msg,buttons=inline)
@@ -209,7 +209,7 @@ Button.inline("𝗕𝗮𝗰𝗸𝘂𝗽","backup")],
 	if a == "true":
 		await backers_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 @bot.on(events.CallbackQuery(data=b'setting'))
 async def settings(event):
@@ -228,7 +228,7 @@ Button.inline("𝗥𝗲𝘀𝘁𝗮𝗿𝘁 𝗦𝗲𝗿𝘃𝗲𝗿","resx")],
 ** » Domain:** `{DOMAIN}`
 ** » ISP:** `{z["isp"]}`
 ** » Region:** `{z["country"]}`
-**🤖 »**@amqyu
+**🤖 »**@Amiqyu
 **◇━━━━━━━━━━━━━━━━━◇**
 """
 		await event.edit(msg,buttons=inline)
@@ -237,4 +237,5 @@ Button.inline("𝗥𝗲𝘀𝘁𝗮𝗿𝘁 𝗦𝗲𝗿𝘃𝗲𝗿","resx")],
 	if a == "true":
 		await settings_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
+
