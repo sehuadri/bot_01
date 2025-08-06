@@ -101,4 +101,4 @@ https://{DOMAIN}:81/ssh-{user}.txt
     if a == "true":
         await create_akun_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
