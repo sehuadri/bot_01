@@ -19,9 +19,9 @@ async def menu(event):
 
     if val == "false":
         try:
-            await event.answer("Buy Premium Chat: @amqyu", alert=True)
+            await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
         except:
-            await event.reply("Buy Premium Chat: @amqyu")
+            await event.reply("Buy Premium Chat: @Amiqyu")
         return
 
     elif val == "true":
