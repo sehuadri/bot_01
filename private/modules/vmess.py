@@ -72,7 +72,7 @@ https://{DOMAIN}:81/vmess-{user}.txt
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** `{later}`
 **◇━━━━━━━━━━━━━━━━━◇**
-**» ** 🤖@amqyu
+**» ** 🤖@Amiqyu
 
 
         """
@@ -86,7 +86,7 @@ https://{DOMAIN}:81/vmess-{user}.txt
     if a == "true":
         await create_vmess_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 @bot.on(events.CallbackQuery(data=b'trial-vmess'))
@@ -143,7 +143,7 @@ https://{DOMAIN}:81/vmess-{remarks}.txt
 **◇━━━━━━━━━━━━━━━━━◇**
 **» Expired Until:** 30 Minutes
 **◇━━━━━━━━━━━━━━━━━◇**
-**» ** 🤖@amqyu
+**» ** 🤖@Amiqyu
         """
         await event.respond(msg)
 
@@ -154,7 +154,7 @@ https://{DOMAIN}:81/vmess-{remarks}.txt
     if a == "true":
         await trial_vmess_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
         
 
 #CEK VMESS
@@ -185,7 +185,7 @@ async def cek_vmess(event):
     if a == "true":
         await cek_vmess_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -211,7 +211,7 @@ async def cek_vmess(event):
     if a == "true":
         await cek_vmess_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
@@ -241,7 +241,7 @@ async def delete_vmess(event):
     if a == "true":
         await delete_vmess_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
         
 
 @bot.on(events.CallbackQuery(data=b'renew-vmess'))
@@ -287,7 +287,7 @@ async def ren_vmess(event):
     if a == "true":
         await ren_vmess_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 @bot.on(events.CallbackQuery(data=b'limit-vmess'))
 async def limit_vmess(event):
@@ -312,7 +312,7 @@ async def limit_vmess(event):
 {a}
 ```
 **GANTI IP VMESS**
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	chat = event.chat_id
 	sender = await event.get_sender()
@@ -320,7 +320,7 @@ async def limit_vmess(event):
 	if a == "true":
 		await limit_vmess_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 @bot.on(events.CallbackQuery(data=b'quota-vmess'))
 async def quota_vmess(event):
@@ -345,7 +345,7 @@ async def quota_vmess(event):
 {a}
 ```
 **GANTI QUOTA VMESS**
-**» 🤖@amqyu**
+**» 🤖@Amiqyu**
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	chat = event.chat_id
 	sender = await event.get_sender()
@@ -353,7 +353,7 @@ async def quota_vmess(event):
 	if a == "true":
 		await quota_vmess_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 
 @bot.on(events.CallbackQuery(data=b'lock-vmess'))
 async def lock_vmess(event):
@@ -377,7 +377,7 @@ async def lock_vmess(event):
 	if a == "true":
 		await lock_vmess_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 #UNLOCK ssh
 @bot.on(events.CallbackQuery(data=b'unlock-vmess'))
 async def unlock_vmess(event):
@@ -401,7 +401,7 @@ async def unlock_vmess(event):
 	if a == "true":
 		await unlock_vmess_(event)
 	else:
-		await event.answer("Buy Premium Chat: @amqyu",alert=True)
+		await event.answer("Buy Premium Chat: @Amiqyu",alert=True)
 		
 @bot.on(events.CallbackQuery(data=b'vmess'))
 async def vmess(event):
@@ -428,7 +428,7 @@ async def vmess(event):
 **» Hostname/IP:** `{DOMAIN}`
 **» ISP:** `{z["isp"]}`
 **» Country:** `{z["country"]}`
-**» ** 🤖@amqyu
+**» ** 🤖@Amiqyu
 **◇━━━━━━━━━━━━━━━━━◇**
 """
         await event.edit(msg, buttons=inline)
@@ -440,7 +440,7 @@ async def vmess(event):
     if a == "true":
         await vmess_(event)
     else:
-        await event.answer("Buy Premium Chat: @amqyu", alert=True)
+        await event.answer("Buy Premium Chat: @Amiqyu", alert=True)
 
 
 
