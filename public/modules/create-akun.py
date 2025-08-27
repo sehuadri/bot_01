@@ -19,12 +19,12 @@ async def create_akun(event):
             exp = (await exp).raw_text
 
         async with bot.conversation(chat) as ip:
-            await event.respond('**Limit Ip:**')
+            await event.respond('**Limit Quota:**')
             ip = ip.wait_event(events.NewMessage(incoming=True, from_users=sender.id))
             ip = (await ip).raw_text
 
         async with bot.conversation(chat) as Quota:
-            await event.respond('**Limit Quota:**')
+            await event.respond('**Limit Ip:**')
             Quota = Quota.wait_event(events.NewMessage(incoming=True, from_users=sender.id))
             Quota = (await Quota).raw_text
 
@@ -32,7 +32,7 @@ async def create_akun(event):
         
 
         await event.edit("**Wait.. Setting up an Account**")
-        cmd = f'printf "%s\n" "{user}" "{pw}" "{ip}" "{Quota}" "{exp}" | addssh-bot'
+        cmd = f'printf "%s\n" "{user}" "{pw}" "{exp}" "{ip}" "{Quota}" | addssh-bot'
         try:
             a = subprocess.check_output(cmd, shell=True).decode("utf-8")
         except Exception as e:
