@@ -32,7 +32,7 @@ async def create_akun(event):
         
 
         await event.edit("**Wait.. Setting up an Account**")
-        cmd = f'printf "%s\n" "{user}" "{pw}" "{ip}" "{Quota}" "{exp}" | addssh-bot'
+        cmd = f'printf "%s\n" "{user}" "{pw}" "{exp}" "{ip}" "{Quota}" | addssh-bot'
         try:
             a = subprocess.check_output(cmd, shell=True).decode("utf-8")
         except Exception as e:
