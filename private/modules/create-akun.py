@@ -13,23 +13,17 @@ async def create_akun(event):
             pw = pw.wait_event(events.NewMessage(incoming=True, from_users=sender.id))
             pw = (await pw).raw_text
             
-        async with bot.conversation(chat) as exp:
-            await event.respond('**Expired:**')
-            exp = exp.wait_event(events.NewMessage(incoming=True, from_users=sender.id))
-            exp = (await exp).raw_text
+  async with bot.conversation(chat) as exp_conv:
+            await event.respond('**Expired :**')
+            exp = (await exp_conv.wait_event(events.NewMessage(incoming=True, from_users=sender.id))).raw_text
 
-        async with bot.conversation(chat) as ip:
-            await event.respond('**Limit Quota:**')
-            ip = ip.wait_event(events.NewMessage(incoming=True, from_users=sender.id))
-            ip = (await ip).raw_text
+        async with bot.conversation(chat) as ip_conv:
+            await event.respond('**Limit Quota :**')
+            ip = (await ip_conv.wait_event(events.NewMessage(incoming=True, from_users=sender.id))).raw_text
 
-        async with bot.conversation(chat) as Quota:
-            await event.respond('**Limit Ip:**')
-            Quota = Quota.wait_event(events.NewMessage(incoming=True, from_users=sender.id))
-            Quota = (await Quota).raw_text
-
-        
-        
+        async with bot.conversation(chat) as Quota_conv:
+            await event.respond('**Limit Ip :**')
+            Quota = (await Quota_conv.wait_event(events.NewMessage(incoming=True, from_users=sender.id))).raw_text
 
         await event.edit("**Wait.. Setting up an Account**")
         cmd = f'printf "%s\n" "{user}" "{pw}" "{exp}" "{ip}" "{Quota}" | addssh-bot'
